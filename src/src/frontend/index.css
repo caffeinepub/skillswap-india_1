@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    /* SkillSwap India: Warm terracotta + deep teal palette */
+    --radius: 0.5rem;
+    
+    /* Base colors - warm cream background */
+    --background: 0.97 0.015 45;
+    --foreground: 0.25 0.03 25;
+    
+    /* Cards - slightly elevated with warm tint */
+    --card: 0.99 0.01 50;
+    --card-foreground: 0.25 0.03 25;
+    
+    /* Popover */
+    --popover: 0.99 0.01 50;
+    --popover-foreground: 0.25 0.03 25;
+    
+    /* Primary - warm terracotta */
+    --primary: 0.58 0.15 35;
+    --primary-foreground: 0.98 0.01 50;
+    
+    /* Secondary - deep teal */
+    --secondary: 0.52 0.12 195;
+    --secondary-foreground: 0.98 0.01 50;
+    
+    /* Muted - soft neutral */
+    --muted: 0.92 0.01 45;
+    --muted-foreground: 0.48 0.02 25;
+    
+    /* Accent - vibrant coral */
+    --accent: 0.68 0.18 25;
+    --accent-foreground: 0.98 0.01 50;
+    
+    /* Destructive */
+    --destructive: 0.55 0.22 15;
+    --destructive-foreground: 0.98 0.01 50;
+    
+    /* Success - fresh green */
+    --success: 0.62 0.14 145;
+    --success-foreground: 0.98 0.01 50;
+    
+    /* Borders & inputs */
+    --border: 0.85 0.015 45;
+    --input: 0.85 0.015 45;
+    --ring: 0.58 0.15 35;
+    
+    /* Charts - vibrant multi-hue palette */
+    --chart-1: 0.58 0.15 35;
+    --chart-2: 0.52 0.12 195;
+    --chart-3: 0.68 0.18 25;
+    --chart-4: 0.62 0.14 145;
+    --chart-5: 0.45 0.18 285;
+    
+    /* Sidebar */
+    --sidebar: 0.97 0.015 45;
+    --sidebar-foreground: 0.25 0.03 25;
+    --sidebar-primary: 0.58 0.15 35;
+    --sidebar-primary-foreground: 0.98 0.01 50;
+    --sidebar-accent: 0.92 0.01 45;
+    --sidebar-accent-foreground: 0.25 0.03 25;
+    --sidebar-border: 0.85 0.015 45;
+    --sidebar-ring: 0.58 0.15 35;
+  }
+
+  .dark {
+    color-scheme: dark;
+    /* Dark mode - deep charcoal with warm undertones */
+    --background: 0.18 0.02 25;
+    --foreground: 0.95 0.01 50;
+    
+    /* Cards - elevated surface */
+    --card: 0.24 0.025 25;
+    --card-foreground: 0.95 0.01 50;
+    
+    /* Popover */
+    --popover: 0.24 0.025 25;
+    --popover-foreground: 0.95 0.01 50;
+    
+    /* Primary - brighter terracotta for dark */
+    --primary: 0.65 0.18 35;
+    --primary-foreground: 0.15 0.02 25;
+    
+    /* Secondary - bright teal */
+    --secondary: 0.58 0.14 195;
+    --secondary-foreground: 0.15 0.02 25;
+    
+    /* Muted */
+    --muted: 0.3 0.02 25;
+    --muted-foreground: 0.7 0.01 50;
+    
+    /* Accent - bright coral */
+    --accent: 0.72 0.2 25;
+    --accent-foreground: 0.15 0.02 25;
+    
+    /* Destructive */
+    --destructive: 0.62 0.24 15;
+    --destructive-foreground: 0.95 0.01 50;
+    
+    /* Success */
+    --success: 0.68 0.16 145;
+    --success-foreground: 0.15 0.02 25;
+    
+    /* Borders & inputs */
+    --border: 0.35 0.02 25;
+    --input: 0.35 0.02 25;
+    --ring: 0.65 0.18 35;
+    
+    /* Charts */
+    --chart-1: 0.65 0.18 35;
+    --chart-2: 0.58 0.14 195;
+    --chart-3: 0.72 0.2 25;
+    --chart-4: 0.68 0.16 145;
+    --chart-5: 0.55 0.2 285;
+    
+    /* Sidebar */
+    --sidebar: 0.18 0.02 25;
+    --sidebar-foreground: 0.95 0.01 50;
+    --sidebar-primary: 0.65 0.18 35;
+    --sidebar-primary-foreground: 0.15 0.02 25;
+    --sidebar-accent: 0.3 0.02 25;
+    --sidebar-accent-foreground: 0.95 0.01 50;
+    --sidebar-border: 0.35 0.02 25;
+    --sidebar-ring: 0.65 0.18 35;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
